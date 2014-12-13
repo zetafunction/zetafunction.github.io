@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.parent.injectedClosure = function () {
+  alert(document.URL);
+  alert(window.document.URL);
+};
+window.location = 'finish-test.html';
+</script>
+</head>
+<body>Starting test...</body>
+</html>

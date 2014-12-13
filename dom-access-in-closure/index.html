@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.onmessage = function () {
+  try {
+    injectedClosure();
+  } catch (e) {
+    alert('Oops! ' + e);
+  }
+};
+</script>
+</head>
+<body>
+<div>You should see two alert()s with URLs or one alert with "Oops".</div>
+<iframe src="start-test.html"></iframe>
+</body>
+</html>
